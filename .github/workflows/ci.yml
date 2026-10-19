@@ -1,0 +1,22 @@
+name: User Story 1 - Add New Student
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify User Story 1 files
+        run: |
+          echo "User Story 1: Add New Student"
+          echo "Checking project files..."
+          test -f index.html
+          test -f style.css
+          echo "Student Management System files are present."
+          echo "User Story 1 verification completed successfully."
