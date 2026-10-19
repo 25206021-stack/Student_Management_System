@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Management System</h1>
+        
+        <!-- User Story 1: Add new student -->
+        <div class="card">
+            <h2>Add New Student</h2>
+            <form id="studentForm">
+                <div class="form-group">
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" name="studentName" placeholder="Enter full name" required>
+                </div>
+                <div class="form-group">
+                    <label for="studentId">Student ID:</label>
+                    <input type="text" id="studentId" name="studentId" placeholder="e.g. 25206021" required>
+                </div>
+                <div class="form-group">
+                    <label for="studentRoll">Roll Number:</label>
+                    <input type="text" id="studentRoll" name="studentRoll" placeholder="e.g. 59" required>
+                </div>
+                <div class="form-group">
+                    <label for="studentDiv">Division / Class:</label>
+                    <input type="text" id="studentDiv" name="studentDiv" placeholder="e.g. TE/A" required>
+                </div>
+                <button type="submit" id="addBtn">Add Student</button>
+            </form>
+        </div>
+
+        <!-- User Story 2: View student details -->
+        <div class="card">
+            <h2>Student Details</h2>
+            <div id="studentList">
+                <table id="studentsTable">
+                    <thead>
+                        <tr>
+                            <th>Student ID</th>
+                            <th>Name</th>
+                            <th>Roll No</th>
+                            <th>Div</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td>25206021</td>
+                            <td>Om Jadhav</td>
+                            <td>59</td>
+                            <td>TE/A</td>
+                            <td><span class="badge active">Enrolled</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
